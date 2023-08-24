@@ -10,7 +10,10 @@
         This service has now ended in England, Scotland and Wales.
     </p>
 
-    <p>Do not call 119, as you will not be able to get a test this way. You cannot order tests from NHS 111 or 999.</p>
+    {{ govukWarningText({
+        text: "Do not call 119, as you will not be able to get a test this way. You cannot order tests from NHS 111 or 999.",
+        iconFallbackText: "Warning"
+    }) }}
 
     <h2 class="govuk-heading-m">
         If you're in England
@@ -24,9 +27,14 @@
         If you're in Scotland
     </h2>
 
-        <p><a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19/" class="govuk-link">Find out what to do if you have symptoms in Scotland</a></p>
-        <p><a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19-treatments" class="govuk-link">Find out what to do if you are eligible for COVID-19 treatments</a></p>
-        <p><a href="https://www.mygov.scot/self-isolation-grant/check-if-you-qualify-and-how-to-apply" class="govuk-link">Find out what to do if you are eligible for self-isolation support grant</a></p>
+    <ul class="govuk-list">
+        <li>
+            <a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19/" class="govuk-link">Find out what to do if you have symptoms in Scotland</a>
+        </li>
+        <li>
+            <a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19-treatments" class="govuk-link">Find out what to do if you are eligible for COVID-19 treatments</a>
+        </li>
+    </ul>
 
     <h2 class="govuk-heading-m">
         If you're in Wales
