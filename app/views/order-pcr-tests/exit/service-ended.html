@@ -1,44 +1,53 @@
 {% set pageTitle = "You can no longer get a free PCR test" %}
-{% extends "layout_service_step.html" %}
+{% extends "layout.html" %}
 
 {% block content %}
+
+   <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
     <h1 class="govuk-heading-l">
         {{ pageTitle }}
     </h1>
 
     <p class="govuk-body">
-        This service has now ended in England, Scotland and Wales.
+        This service has now ended.
     </p>
 
-    <p>Do not call 119, as you will not be able to get a test this way. You cannot order tests from NHS 111 or 999.</p>
+    <p>Do not call 119, as you will not be able to get a test this way.</p>
 
     <h2 class="govuk-heading-m">
-        If you're in England
+       Find out more about testing guidance across the UK:
     </h2>
+
+    <ul class="govuk-list">
+      <li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms/main-symptoms/" class="govuk-link">England:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></li>
+      <li> <a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19/" class="govuk-link">Scotland:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></li>
+      <li><a href="https://gov.wales/get-tested-coronavirus-covid-19" class="govuk-link">Wales:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></li>
+      <li><a href="https://www.nidirect.gov.uk/articles/coronavirus-covid-19-testing-and-stay-home-advice" class="govuk-link">Northern Ireland:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></li>
+    </ul>
+
+ <!--  <p class="govuk-body">
+        <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms/main-symptoms/" class="govuk-link">England:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a>
+    </p>
 
     <p class="govuk-body">
-        <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms/main-symptoms/" class="govuk-link">Find out what to do if you have symptoms <span class="govuk-visually-hidden">in England</span></a>
-    </p>
-
-    <h2 class="govuk-heading-m">
-        If you're in Scotland
-    </h2>
-
-        <p><a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19/" class="govuk-link">Find out what to do if you have symptoms <span class="govuk-visually-hidden">in Scotland</span></a></p>
-        <p><a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19-treatments" class="govuk-link">Find out what to do if you are eligible for COVID-19 treatments</a></p>
-        <!-- <p><a href="https://www.mygov.scot/self-isolation-grant/check-if-you-qualify-and-how-to-apply" class="govuk-link">Find out what to do if you are eligible for self-isolation support grant</a></p> -->
-
-    <h2 class="govuk-heading-m">
-        If you're in Wales
-    </h2>
+        <a href="https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/coronavirus-covid-19/coronavirus-covid-19/" class="govuk-link">Scotland:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></p>
 
     <p class="govuk-body">
-        <a href="https://gov.wales/get-tested-coronavirus-covid-19" class="govuk-link">Find out what to do if you have symptoms <span class="govuk-visually-hidden">in Wales</span></a>
+        <a href="https://gov.wales/get-tested-coronavirus-covid-19" class="govuk-link">Wales:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></a>
     </p>
+
+     <p class="govuk-body">
+        <a href="https://gov.wales/get-tested-coronavirus-covid-19" class="govuk-link">Northern Ireland:<span class="govuk-visually-hidden">find out more about</span> testing guidance</a></a>
+    </p> -->
 
     <p class="govuk-body">
         If you're worried, or your symptoms get worse, contact 111 or speak to your GP. In an emergancy dial 999.
     </p>
+
+    </div>
+</div>
 
 {% endblock %}
 
